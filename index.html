@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Go Payana</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./src/output.css">
+
+	<!-- Alpine Plugins -->
+	<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+
+	<!-- Alpine Core -->
+	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="antialiased font-sans leading-[1] text-primary-yellow relative overflow-x-hidden w-screen">
+
+
+	<header class="absolute top-0 left-0 w-full pointer-events-none p-[4vw] md:p-[2vw] z-[2]">
+		<a href="./index.html" class="pointer-events-auto">
+			<img src="./public/images/logo.png" class="w-[20vw] md:w-[8vw]" alt="Image">
+		</a>
+	</header>
+
+	<main class="relative z-[1]">
+		<!-- Landing Section Start -->
+		<section class="lg:min-h-screen bg-[#F7F7F7] relative z-[10] overflow-hidden">
+			<!-- Decorative Ping Ring (Hidden from screen readers) -->
+			<div class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-0" aria-hidden="true">
+				<div class="relative w-[25vw] md:w-[25vw] aspect-square flex items-center justify-center opacity-40">
+					<span class="ring-ping delay-0"></span>
+					<span class="ring-ping delay-800"></span>
+					<span class="ring-ping delay-1600"></span>
+				</div>
+			</div>
+
+			<div class="absolute z-[2] bg-[#FAE070] rounded-full aspect-video w-[25vw] top-0 right-0 blur-[4vw] -mt-[5vw]"></div>
+			<div class="absolute z-[2] bg-[#FAE070] rounded-full aspect-video w-[18vw] top-1/2 right-1/2 translate-x-[50%] translate-y-[70%] blur-[4vw] -mt-[5vw]"></div>
+			<div class="px-[7vw] pt-[45vw] md:pt-[9vw] pb-[20vw] md:pb-[7vw] flex flex-col md:flex-row gap-[18vw] md:gap-[4.5vw] md:justify-between md:items-end relative z-[5]">
+				<div class="flex-1">
+					<div class="relative flex flex-col gap-[5vw] md:gap-[2vw]">
+						<div class="relative w-max">
+							<div class="rounded-full text16px-mobile bg-[#FAE070] border-2 border-[#1C1C1C] text-[#1C1C1C] relative z-[1] text20px-desktop font-semibold px-[3.5vw] md:px-[1.25vw] py-[2.5vw] md:py-[.75vw]">INTRODUCING</div>
+							<div class="absolute top-0 left-0 z-0 w-full h-full rounded-full bg-[#1C1C1C] translate-[.3vw]"></div>
+						</div>
+
+						<h1 class="text90px-desktop leading-[1.12] text-[#1C1C1C] -tracking-[.01vw] font-semibold text40px-mobile">Gopayana Mysuru’s Smart Mobility Platform</h1>
+
+						<p class="text40px-desktop font-medium text-[#262626] text20px-mobile">Ride Smart. Ride Local. Ride Gopayana.</p>
+
+						<a href="#" class="btn-animate block w-max group mt-[5vw] md:mt-[2vw]">
+							<div class="btn-container rounded-full p-[1vw] md:p-[.5vw] flex items-center gap-[4vw] md:gap-[2.5vw] border-[2px] bg-[#1C1C1C]">
+
+								<div class="btn-text-wrapper flex-col relative inline-flex whitespace-nowrap overflow-hidden">
+									<span class="text28px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] duration-300 inline-block group-hover:-translate-y-full">
+										Know more
+									</span>
+									<span class="text28px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] absolute top-full left-0 duration-300 inline-block group-hover:-translate-y-full">
+										Know more
+									</span>
+								</div>
+
+								<div class="btn-circle rounded-full aspect-square h-[9vw] md:h-[3.5vw] flex items-center justify-center bg-[#FAE070]" aria-hidden="true">
+									<div class="relative overflow-hidden size-[6vw] md:w-[3vw] md:h-[3vw] flex items-center justify-center">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rotate-90 w-[6vw] md:w-[2.75vw] h-auto duration-300 group-hover:translate-x-full" viewBox="0 0 24 24" role="presentation">
+											<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12l-7-7l-7 7m7-7v14" />
+										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="absolute top-1/2 -translate-y-1/2 -left-[40%] -translate-x-1/2 rotate-90 w-[6vw] md:w-[2.75vw] h-auto duration-300 group-hover:translate-x-1/2" viewBox="0 0 24 24" role="presentation">
+											<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12l-7-7l-7 7m7-7v14" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="flex-1 relative">
+					<div class="relative">
+						<img src="./public/images/landing-auto.png" class="w-[55%] object-cover pt-[25vw] md:pt-[15vw] relative z-[1]" alt="Image">
+						<img src="./public/images/landing-taxi.png" class="w-[55%] absolute top-0 right-[10%] object-cover z-0" alt="Image">
+
+						<div class="absolute right-0 top-1/2 -translate-y-full z-[1] w-max">
+							<div class="rounded-[3vw] md:rounded-[1vw] bg-[#FAE070] border-2 border-[#1C1C1C] text-[#1C1C1C] text-semibold relative z-[1] text18px-mobile text20px-desktop px-[3vw] md:px-[1.25vw] py-[2vw] md:py-[.75vw]">
+								<img src="./public/images/landing-mysuru.png" class="w-[19vw] md:w-[6vw]" alt="Image">
+								<p class="flex flex-col items-center text-center mt-[3vw] md:mt-[1vw] gap-[.1vw]">
+									<span class="inline-block">MYSURU'S</span>
+									<span class="inline-block">MOBILITY</span>
+									<span class="inline-block">START-UP</span>
+								</p>
+							</div>
+							<div class="absolute top-0 left-0 z-0 w-full h-full rounded-[3vw] md:rounded-[1vw] bg-[#1C1C1C] translate-[.3vw]"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Landing Section End -->
+
+		<!-- What We Do Section Start -->
+		<section class="relative z-[9] overflow-hidden">
+			<!-- Decorative Ping Ring (Hidden from screen readers) -->
+			<div class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 z-0" aria-hidden="true">
+				<div class="relative w-[25vw] md:w-[25vw] aspect-square flex items-center justify-center opacity-40">
+					<span class="ring-ping delay-0"></span>
+					<span class="ring-ping delay-800"></span>
+					<span class="ring-ping delay-1600"></span>
+				</div>
+			</div>
+
+			<div class="px-[5vw] md:px-[7vw] py-[20vw] md:py-[7vw] relative z-[5]">
+				<div class="flex flex-col md:flex-row gap-[5vw] md:gap-[4.5vw] md:justify-between relative z-[1]">
+					<div class="flex-1 relative">
+						<img src="./public/images/double-phone.png" class="w-full" alt="Image">
+					</div>
+					<div class="flex-1 relative">
+						<div class="relative flex flex-col gap-[5vw] md:gap-[2.5vw]">
+							<div class="relative w-max">
+								<div class="rounded-full text16px-mobile bg-[#FAE070] border-2 border-[#1C1C1C] text-[#1C1C1C] relative z-[1] text20px-desktop font-semibold px-[3.5vw] md:px-[1.25vw] py-[2.5vw] md:py-[.75vw]">WHAT WE DO</div>
+								<div class="absolute top-0 left-0 z-0 w-full h-full rounded-full bg-[#1C1C1C] translate-[.3vw]"></div>
+							</div>
+
+							<h2 class="text80px-desktop text40px-mobile leading-[1.06] text-[#1C1C1C] -tracking-[.01vw] font-semibold mt-[1vw] w-[95%] md:w-full">Built for Mysuru and powered by technology</h2>
+
+							<p class="text26px-desktop text16px-mobile font-medium text-[#262626] leading-[1.46] md:max-w-[96%]"><span class="font-bold">Gopayana</span> is a subscription-based auto and cab aggregator platform that connects passengers with trusted local drivers. Gopayana gives drivers more freedom and riders more reliability—without the high costs of traditional apps.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="relative z-0 rounded-[3vw] overflow-hidden bg-[#FAE070] flex flex-col md:flex-row md:items-end md:justify-between p-[5vw] md:p-[2.75vw] pt-[7vw] md:pt-[4vw] mt-[15vw] md:-mt-[4vw]">
+					<img src="./public/images/bg-svg.svg" class="absolute z-0 right-0 bottom-0 md:w-[40%] w-full" alt="">
+					<div class="flex flex-col gap-[3.5vw]">
+						<h3 class="flex flex-col text-[#1C1C1C] text72px-desktop text30px-mobile font-semibold leading-[.95]">
+							<span>Download the</span>
+							<span>Gopayana App</span>
+						</h3>
+
+						<div class="flex items-center gap-[4vw] md:gap-[2vw] mt-[3vw] md:mt-0">
+							<a href="#">
+								<img src="./public/images/gplay.png" class="h-[11vw] md:h-[4.5vw]" alt="Image">
+							</a>
+							<div>
+								<img src="./public/images/ios.png" class="h-[11vw] md:h-[4.5vw]" alt="Image">
+							</div>
+						</div>
+					</div>
+					<img src="./public/images/auto.png" class="w-full md:w-[30%] relative z-[1] translate-y-[1vw]" alt="Image">
+				</div>
+
+				<div class="mt-[4vw] md:mt-[1vw] flex flex-col md:flex-row gap-[4vw] md:gap-[1vw]">
+					<div class="flex-1 overflow-hidden bg-[#FAE070] p-[5vw] md:px-[2.5vw] md:py-[2vw] rounded-[3vw]">
+						<div class="flex justify-between items-start">
+							<div class="pt-[.6vw]">
+								<p class="text36px-desktop text30px-mobile font-semibold text-[#262626]">For Passengers</p>
+								<p class="text26px-desktop text16px-mobile font-medium text-[#262626]/80 leading-[1.46] mt-[1vw] md:mt-[.2vw]">Book autos and cabs easily</p>
+
+								<a href="#" class="btn-animate block w-max group mt-[10vw] md:mt-[4vw]">
+									<div class="btn-container rounded-full p-[1vw] md:p-[.5vw] flex items-center gap-[4vw] md:gap-[2.5vw] border-[2px] bg-[#1C1C1C]">
+
+										<div class="btn-text-wrapper flex-col relative inline-flex whitespace-nowrap overflow-hidden">
+											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] duration-300 inline-block group-hover:-translate-y-full">
+												Download
+											</span>
+											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] absolute top-full left-0 duration-300 inline-block group-hover:-translate-y-full">
+												Download
+											</span>
+										</div>
+
+										<div class="btn-circle rounded-full aspect-square h-[9vw] md:h-[2.25vw] flex items-center justify-center bg-[#FAE070]" aria-hidden="true">
+											<div class="relative overflow-hidden size-[6vw] md:w-[2vw] md:h-[3vw] flex items-center justify-center">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rotate-180 w-[6vw] md:w-[1.65vw] h-auto duration-300" viewBox="0 0 24 24" role="presentation">
+													<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12l-7-7l-7 7m7-7v14" />
+												</svg>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="rounded-full size-[13vw] md:size-[5vw] flex items-center justify-center bg-[#EED35D] translate-x-[1vw] -translate-y-[.85vw]">
+								<img src="./public/images/man.svg" class="h-[50%] md:h-[65%]" alt="Image">
+							</div>
+						</div>
+					</div>
+					<div class="flex-1 overflow-hidden bg-[#FAE070] p-[5vw] md:px-[2.5vw] md:py-[2vw] rounded-[3vw]">
+						<div class="flex justify-between items-start">
+							<div class="pt-[.6vw]">
+								<p class="text36px-desktop text30px-mobile font-semibold text-[#262626]">For Drivers</p>
+								<p class="text26px-desktop text16px-mobile font-medium text-[#262626]/80 leading-[1.46] mt-[1vw] md:mt-[.2vw]">₹20/day subscription, zero commissions</p>
+
+								<a href="#" class="btn-animate block w-max group mt-[10vw] md:mt-[4vw]">
+									<div class="btn-container rounded-full p-[1vw] md:p-[.5vw] flex items-center gap-[4vw] md:gap-[2.5vw] border-[2px] bg-[#1C1C1C]">
+
+										<div class="btn-text-wrapper flex-col relative inline-flex whitespace-nowrap overflow-hidden">
+											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] duration-300 inline-block group-hover:-translate-y-full">
+												Download
+											</span>
+											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] absolute top-full left-0 duration-300 inline-block group-hover:-translate-y-full">
+												Download
+											</span>
+										</div>
+
+										<div class="btn-circle rounded-full aspect-square h-[9vw] md:h-[2.25vw] flex items-center justify-center bg-[#FAE070]" aria-hidden="true">
+											<div class="relative overflow-hidden size-[6vw] md:w-[2vw] md:h-[3vw] flex items-center justify-center">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rotate-180 w-[6vw] md:w-[1.65vw] h-auto duration-300" viewBox="0 0 24 24" role="presentation">
+													<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12l-7-7l-7 7m7-7v14" />
+												</svg>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="rounded-full size-[13vw] md:size-[5vw] flex items-center justify-center bg-[#EED35D] translate-x-[1vw] -translate-y-[.85vw]">
+								<img src="./public/images/auto-svg.svg" class="h-[40%] md:h-[55%]" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- What We Do Section End -->
+
+		<!-- Our USP Section Start -->
+		<section class="relative z-[9] bg-[#212121] overflow-hidden">
+			<img src="./public/images/usp.svg" class="absolute top-0 right-0 w-[70%] z-[2]" alt="">
+			<div class="px-[5vw] md:px-[7vw] py-[20vw] md:py-[7vw] relative z-[5]">
+				<img src="./public/images/mobile.png" class="w-[30%] md:w-[20vw] absolute right-0 top-[0%] md:top-auto md:bottom-[10%] -rotate-12" alt="Image">
+				<div class="relative z-[1]">
+					<div class="flex flex-col gap-[6vw] md:gap-[3vw]">
+						<div class="relative w-max">
+							<div class="rounded-full text16px-mobile bg-[#FAE070] border-2 border-[#1C1C1C] text-[#1C1C1C] relative z-[1] text20px-desktop font-semibold px-[3.5vw] md:px-[1.25vw] py-[2.5vw] md:py-[.75vw]">OUR USP</div>
+							<div class="absolute top-0 left-0 z-0 w-full h-full rounded-full bg-[#1C1C1C] translate-[.3vw] border border-white"></div>
+						</div>
+
+						<h2 class="text80px-desktop text40px-mobile leading-[1.06] text-[#FFFFFF] -tracking-[.01vw] font-semibold mt-[.5vw] flex flex-col">
+							<span>Why Choose</span>
+							<span>Gopayana?</span>
+						</h2>
+
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-[6vw] md:gap-[3vw] mt-[7vw] md:mt-[3vw] text-white md:w-[70%]">
+							<div class="flex gap-[4vw] items-center md:gap-[1.65vw]">
+								<div class="shrink-0 size-[12vw] md:size-[4.5vw] rounded-[3vw] md:rounded-[1.25vw] flex justify-center items-center border border-white">
+									<img src="./public/images/usp-1.svg" class="w-[42%]" alt="">
+								</div>
+								<p class="font-medium text26px-desktop leading-[1.4]"><span class="font-bold">₹20/day</span> fixed subscription<br class="hidden md:inline-block"> for drivers – No commissions</p>
+							</div>
+							<div class="flex gap-[4vw] items-center md:gap-[1.65vw] md:row-start-2">
+								<div class="shrink-0 size-[12vw] md:size-[4.5vw] rounded-[3vw] md:rounded-[1.25vw] flex justify-center items-center border border-white">
+									<img src="./public/images/usp-2.svg" class="w-[45%]" alt="">
+								</div>
+								<p class="font-medium text26px-desktop leading-[1.4]">Affordable, reliable rides<br class="hidden md:inline-block"> with local drivers</p>
+							</div>
+							<div class="flex gap-[4vw] items-center md:gap-[1.65vw] md:col-start-1 md:row-start-3">
+								<div class="shrink-0 size-[12vw] md:size-[4.5vw] rounded-[3vw] md:rounded-[1.25vw] flex justify-center items-center border border-white">
+									<img src="./public/images/usp-3.svg" class="w-[42%]" alt="">
+								</div>
+								<p class="font-medium text26px-desktop leading-[1.4]">Transparent pricing,<br class="hidden md:inline-block"> no surge fares</p>
+							</div>
+							<div class="flex gap-[4vw] items-center md:gap-[1.65vw] md:col-start-2 md:row-start-2">
+								<div class="shrink-0 size-[12vw] md:size-[4.5vw] rounded-[3vw] md:rounded-[1.25vw] flex justify-center items-center border border-white">
+									<img src="./public/images/usp-4.svg" class="w-[42%]" alt="">
+								</div>
+								<p class="font-medium text26px-desktop leading-[1.4]"><span class="font-bold">24/7 support</span> for<br class="hidden md:inline-block"> passengers and drivers</p>
+							</div>
+							<div class="flex gap-[4vw] items-center md:gap-[1.65vw] md:row-start-3">
+								<div class="shrink-0 size-[12vw] md:size-[4.5vw] rounded-[3vw] md:rounded-[1.25vw] flex justify-center items-center border border-white">
+									<img src="./public/images/usp-5.svg" class="w-[42%]" alt="">
+								</div>
+								<p class="font-medium text26px-desktop leading-[1.4]">Mysuru-based platform, designed<br class="hidden md:inline-block"> for Karnataka’s needs</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- Our USP Section End -->
+
+		<!-- Operate Section Start -->
+		<section class="relative overflow-hidden">
+			<!-- Decorative Ping Ring (Hidden from screen readers) -->
+			<div class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 z-0" aria-hidden="true">
+				<div class="relative w-[25vw] md:w-[25vw] aspect-square flex items-center justify-center opacity-40">
+					<span class="ring-ping delay-0"></span>
+					<span class="ring-ping delay-800"></span>
+					<span class="ring-ping delay-1600"></span>
+				</div>
+			</div>
+			<div x-data="{
+					tabSelected: 1,
+					tabId: $id('tabs'),
+					tabButtonClicked(tabButton){
+						this.tabSelected = Number(tabButton.id.replace(this.tabId + '-', ''));
+						console.log(this.tabSelected);
+						this.tabRepositionMarker(tabButton);
+					},
+					tabRepositionMarker(tabButton){
+						this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px';
+						this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px';
+						this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px';
+					},
+					tabContentActive(tabContent){
+						return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+					}
+				}" x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);" class="px-[5vw] md:px-[7vw] py-[20vw] md:py-[7vw] relative z-[5]">
+				<div class="relative w-max">
+					<div class="rounded-full text16px-mobile bg-[#FAE070] border-2 border-[#1C1C1C] text-[#1C1C1C] relative z-[1] text20px-desktop font-semibold px-[3.5vw] md:px-[1.25vw] py-[2.5vw] md:py-[.75vw]">HOW WE OPERATE</div>
+					<div class="absolute top-0 left-0 z-0 w-full h-full rounded-full bg-[#1C1C1C] translate-[.3vw]"></div>
+				</div>
+				<div class="flex flex-col md:flex-row md:justify-between md:items-center gap-[10vw] md:gap-0 mt-[6vw] md:mt-[3.5vw]">
+					<h2 class="text74px-desktop text40px-mobile font-semibold text-[#1C1C1C]">How it Works</h2>
+
+					<div x-ref="tabButtons" class="relative inline-grid items-center justify-center w-max h-[12vw] md:h-[3.45vw] grid-cols-2 p-[2vw] md:p-[.5vw] font-medium text20px-mobile text24px-desktop bg-[#EBEBEB] rounded-full select-none">
+						<button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="tabSelected === 1 ? 'text-[#FAE070]':'text-[#262626]'" class="relative z-20 inline-flex items-center justify-center w-full h-[8.25vw] md:h-[2.5vw] px-[4vw] md:px-[1vw] transition-all rounded-full cursor-pointer whitespace-nowrap">Riders</button>
+						<button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="tabSelected === 2 ? 'text-[#FAE070]':'text-[#262626]'" class="relative z-20 inline-flex items-center justify-center w-full h-[8.25vw] md:h-[2.5vw] px-[4vw] md:px-[1vw] transition-all rounded-full cursor-pointer whitespace-nowrap">Drivers</button>
+						<div x-ref="tabMarker" class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out" x-cloak>
+							<div class="w-full h-full bg-[#212121] rounded-full"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-[6vw] md:mt-0">
+					<div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
+						<div class="mt-[4vw] grid grid-cols-1 md:grid-cols-4 gap-[3vw] md:gap-[1.5vw]">
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/down.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Download the App (Passenger or Driver version)</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">01</p>
+							</div>
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/down.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Register with your mobile number</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">02</p>
+							</div>
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/tick.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Book or Accept Rides</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">03</p>
+							</div>
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/down.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Track in real time, Pay, and Review</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">04</p>
+							</div>
+						</div>
+					</div>
+					<div :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
+						<div class="mt-[4vw] grid grid-cols-1 md:grid-cols-4 gap-[3vw] md:gap-[1.5vw]">
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/down.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Download the App (Passenger or Driver version)</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">01</p>
+							</div>
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/down.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Register with your mobile number</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">02</p>
+							</div>
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/tick.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Book or Accept Rides</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">03</p>
+							</div>
+							<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
+								<img src="./public/images/down.svg" class="w-[8vw] md:w-[3vw]" alt="">
+								<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]">Track in real time, Pay, and Review</p>
+								<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]">04</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Operate Section End -->
+
+		<div class="px-[5vw] md:px-[1.5vw]">
+			<div class="h-[3px] w-full bg-[#E7E7E7]"></div>
+		</div>
+
+		<!-- FAQ Section Start -->
+		<section class="relative overflow-hidden">
+			<!-- Decorative Ping Ring (Hidden from screen readers) -->
+			<div class="absolute top-1/3 left-0 -translate-x-1/2 -translate-y-1/2 z-0" aria-hidden="true">
+				<div class="relative w-[25vw] md:w-[15vw] aspect-square flex items-center justify-center opacity-40">
+					<span class="ring-ping delay-0"></span>
+					<span class="ring-ping delay-800"></span>
+					<span class="ring-ping delay-1600"></span>
+				</div>
+			</div>
+
+			<div class="px-[5vw] md:px-[7vw] py-[20vw] md:py-[7vw] relative z-[5]">
+				<div x-data="{
+						tabSelected: 1,
+						tabId: $id('tabs'),
+						tabButtonClicked(tabButton){
+							this.tabSelected = Number(tabButton.id.replace(this.tabId + '-', ''));
+							console.log(this.tabSelected);
+							this.tabRepositionMarker(tabButton);
+						},
+						tabRepositionMarker(tabButton){
+							this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px';
+							this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px';
+							this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px';
+						},
+						tabContentActive(tabContent){
+							return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+						}
+					}" x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);" class="flex flex-col md:flex-row gap-[10vw] md:gap-[4vw]">
+					<div class="md:w-[40%]">
+						<div class="relative w-max">
+							<div class="rounded-full text16px-mobile bg-[#FAE070] border-2 border-[#1C1C1C] text-[#1C1C1C] relative z-[1] text20px-desktop font-semibold px-[3.5vw] md:px-[1.25vw] py-[2.5vw] md:py-[.75vw]">FAQs</div>
+							<div class="absolute top-0 left-0 z-0 w-full h-full rounded-full bg-[#1C1C1C] translate-[.3vw]"></div>
+						</div>
+						<div class="flex flex-col gap-[3vw] mt-[6vw] md:mt-[3.5vw]">
+							<h2 class="text74px-desktop text40px-mobile font-semibold text-[#1C1C1C]">Answers to<br> Your Questions</h2>
+
+							<div x-ref="tabButtons" class="relative inline-grid items-center justify-center w-max h-[12vw] md:h-[3.45vw] grid-cols-2 p-[2vw] md:p-[.5vw] font-medium text20px-mobile text24px-desktop bg-[#EBEBEB] rounded-full select-none">
+								<button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="tabSelected === 1 ? 'text-[#FAE070]':'text-[#262626]'" class="relative z-20 inline-flex items-center justify-center w-full h-[8.25vw] md:h-[2.5vw] px-[4vw] md:px-[1vw] transition-all rounded-full cursor-pointer whitespace-nowrap">For riders</button>
+								<button :id="$id(tabId)" @click="tabButtonClicked($el);" type="button" :class="tabSelected === 2 ? 'text-[#FAE070]':'text-[#262626]'" class="relative z-20 inline-flex items-center justify-center w-full h-[8.25vw] md:h-[2.5vw] px-[4vw] md:px-[1vw] transition-all rounded-full cursor-pointer whitespace-nowrap">For drivers</button>
+								<div x-ref="tabMarker" class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out" x-cloak>
+									<div class="w-full h-full bg-[#212121] rounded-full"></div>
+								</div>
+							</div>
+						</div>
+
+						<img src="./public/images/faq.png" class="mt-[8vw] w-[85%] hidden md:block" alt="">
+					</div>
+					<div class="md:w-[60%]">
+						<div>
+							<div x-data="{ 
+									activeAccordion: '', 
+									setActiveAccordion(id) { 
+										this.activeAccordion = (this.activeAccordion == id) ? '' : id 
+									} 
+								}" :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
+								<div x-data="{
+									faqs: [
+										{ id: 1, question: 'How do I request a ride?', answer: 'To request a ride, simply open the app, enter your pickup and drop-off locations, choose your preferred ride type, and confirm the booking. Your driver will be on the way within minutes.' },
+										{ id: 2, question: 'How is the fare calculated?', answer: 'Fare is based on distance, estimated time, and local city rates. The app will show the estimated cost before you confirm your ride.' },
+										{ id: 3, question: 'Is surge pricing applied?', answer: 'Surge pricing may be applied during peak hours or high-demand situations. The app will always notify you if surge rates are active before you confirm.' },
+										{ id: 4, question: 'Can I schedule a ride in advance?', answer: 'Yes, you can schedule rides up to 7 days in advance by selecting the “Schedule” option before confirming your booking.' },
+										{ id: 5, question: 'Can drivers cancel rides?', answer: 'Drivers can cancel under specific conditions (like incorrect pickup details), but such instances are rare. You’ll be notified immediately if this happens.' },
+										{ id: 6, question: 'What is the cancellation fee?', answer: 'Cancellation fees vary based on your location and the time of cancellation. The app will display the fee if applicable when you cancel.' },
+										{ id: 7, question: 'What payment options are available?', answer: 'We accept credit/debit cards, UPI, wallets, and cash payments, depending on your region.' },
+										{ id: 8, question: 'Is there 24/7 support available?', answer: 'Yes, our in-app chat and call support are available 24/7 for all riders.' },
+										{ id: 9, question: 'Can I change my drop-off location mid-ride?', answer: 'Yes, you can update your destination in the app while on the trip. Your fare will adjust automatically based on the new route.' },
+										{ id: 10, question: 'Can I take multiple stops during a ride?', answer: 'Yes, you can add multiple stops when booking your ride or while en route. Each stop will adjust your final fare.' },
+										{ id: 11, question: 'How do I report lost items?', answer: 'If you left something in a vehicle, you can contact the driver through the app or reach our support team for assistance.' },
+										{ id: 12, question: 'Is booking available outside Mysuru?', answer: 'Currently, services are focused on Mysuru, but we’re expanding soon to other cities.' },
+										{ id: 13, question: 'How can I leave feedback for my ride?', answer: 'You can rate your driver and leave feedback directly in the app after your trip is completed.' },
+										{ id: 14, question: 'Can I share a ride with friends?', answer: 'Yes, you can add multiple pickup points for friends while booking, or share your ride link so they can join.' },
+										{ id: 15, question: 'When will the iOS version be available?', answer: 'The iOS version is launching soon — stay tuned for our official release announcement!' },
+										{ id: 16, question: 'How safe is GoPayana?', answer: 'Your safety is our top priority. All drivers undergo verification, and our app features SOS buttons, trip tracking, and 24/7 support.' }
+									]
+								}" class="flex flex-col gap-[1vw]">
+
+									<template x-for="(faq, index) in faqs" :key="faq.id">
+										<div :id="$id('accordion')" class="cursor-pointer group bg-[#F2F2F2] rounded-[3vw] md:rounded-[1.25vw]">
+											<button @click="activeAccordion = (activeAccordion === faq.id ? null : faq.id)" class="flex items-center justify-between w-full px-[5vw] md:px-[2vw] py-[5vw] md:py-[1.5vw] text-left select-none cursor-pointer">
+												<div class="flex items-center gap-[3vw] md:gap-[1.5vw] w-[80%]">
+													<span class="text20px-desktop text14px-mobile font-semibold text-[#939393]" x-text="String(faq.id).padStart(2, '0')"></span>
+													<span class="text36px-desktop text22px-mobile text-[#1C1C1C] font-semibold leading-[1.1]" x-text="faq.question"></span>
+												</div>
+												<div class="rounded-full bg-[#212121] flex items-center justify-center size-[6vw] md:size-[2.25vw] relative">
+													<div :class="{ 'rotate-90': activeAccordion==faq.id }" class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center size-[40%] duration-300 ease-out">
+														<div class="absolute w-[1.5px] md:w-[3px] h-full bg-[#FAE070] rounded-full"></div>
+														<div :class="{ 'rotate-90': activeAccordion==faq.id }" class="absolute w-full h-[1.5px] md:h-[3px] ease duration-500 bg-[#FAE070] rounded-full"></div>
+													</div>
+												</div>
+											</button>
+
+											<div x-show="activeAccordion==faq.id" x-collapse x-cloak>
+												<div class="p-[5vw] md:p-[2vw] pt-0 pl-[12vw] md:pl-[5vw] md:w-[90%] font-medium text20px-desktop text16px-mobile leading-[1.45] text-[#262626]" x-text="faq.answer"></div>
+											</div>
+										</div>
+									</template>
+
+								</div>
+							</div>
+
+							<div x-data="{ 
+										activeAccordion: '', 
+										setActiveAccordion(id) { 
+											this.activeAccordion = (this.activeAccordion == id) ? '' : id 
+										} 
+									}" :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
+								<div x-data="{
+											driversFaqs: [
+												{ id: 1, question: 'What is the driver subscription fee?', answer: 'Drivers can operate on a ₹20/day subscription model, which covers unlimited trips and access to rider requests.' },
+												{ id: 2, question: 'How do I register as a driver?', answer: 'You can register by filling out our driver signup form in the app or on our website. You’ll need to upload valid documents and complete verification.' },
+												{ id: 3, question: 'What vehicle documents are required?', answer: 'Typically, we require a valid driving license, RC book, insurance, and pollution certificate. Exact requirements may vary by city.' },
+												{ id: 4, question: 'How does the ₹20/day subscription work?', answer: 'Once subscribed, drivers can take unlimited rides without any commission deductions. The daily subscription fee must be paid through the app.' }
+											]
+										}" class="flex flex-col gap-[1vw]">
+
+									<template x-for="(faq, index) in driversFaqs" :key="faq.id">
+										<div :id="$id('accordion')" class="cursor-pointer group bg-[#F2F2F2] rounded-[3vw] md:rounded-[1.25vw]">
+											<button @click="activeAccordion = (activeAccordion === faq.id ? null : faq.id)" class="flex items-center justify-between w-full px-[5vw] md:px-[2vw] py-[5vw] md:py-[1.5vw] text-left select-none cursor-pointer">
+												<div class="flex items-center gap-[3vw] md:gap-[1.5vw] w-[80%]">
+													<span class="text20px-desktop text14px-mobile font-semibold text-[#939393]" x-text="String(faq.id).padStart(2, '0')"></span>
+													<span class="text36px-desktop text22px-mobile text-[#1C1C1C] font-semibold leading-[1.1]" x-text="faq.question"></span>
+												</div>
+												<div class="rounded-full bg-[#212121] flex items-center justify-center size-[6vw] md:size-[2.25vw] relative">
+													<div :class="{ 'rotate-90': activeAccordion==faq.id }" class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center size-[40%] duration-300 ease-out">
+														<div class="absolute w-[1.5px] md:w-[3px] h-full bg-[#FAE070] rounded-full"></div>
+														<div :class="{ 'rotate-90': activeAccordion==faq.id }" class="absolute w-full h-[1.5px] md:h-[3px] ease duration-500 bg-[#FAE070] rounded-full"></div>
+													</div>
+												</div>
+											</button>
+
+											<div x-show="activeAccordion==faq.id" x-collapse x-cloak>
+												<div class="p-[5vw] md:p-[2vw] pt-0 pl-[12vw] md:pl-[5vw] md:w-[90%] font-medium text20px-desktop text16px-mobile leading-[1.45] text-[#262626]" x-text="faq.answer"></div>
+											</div>
+										</div>
+									</template>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FAQ Section End -->
+
+	</main>
+
+	<footer class="bg-[#212121] relative text-white">
+		<img src="./public/images/usp.svg" class="absolute top-0 right-0 w-[70%] z-[2]" alt="">
+
+		<div class="pt-[10vw] md:pt-[4vw] px-[5vw] md:px-[2vw] pb-[8vw] md:pb-[2.5vw] relative z-[4]">
+			<div class="flex flex-col md:flex-row gap-[10vw] md:gap-0 md:justify-between md:items-center px-[2vw]">
+				<div>
+					<p class="font-medium text48px-desktop text30px-mobile leading-[1.03]">Partnerships &<br> Business Enquiries</p>
+					<div class="mt-[5vw] md:mt-[2vw] flex flex-col gap-[1vw]">
+						<!-- <a href="tel:+919047228648" class="flex gap-[1vw] items-center group">
+							<div class="shrink-0 rounded-full size-[3.5vw] bg-[#FAE070] flex items-center justify-center">
+								<img src="./public/images/phone.svg" class="w-[40%]" alt="">
+							</div>
+							<p class="font-medium text30px-desktop text-[#B5B5B5] duration-300 group-hover:text-white">+91 90472 28648</p>
+						</a> -->
+						<a href="mailto:payanaco.in@gmail.com" class="flex gap-[3vw] md:gap-[1vw] items-center group">
+							<div class="shrink-0 rounded-full size-[8vw] md:size-[3.5vw] bg-[#FAE070] flex items-center justify-center">
+								<img src="./public/images/mail.svg" class="w-[40%]" alt="">
+							</div>
+							<p class="font-medium text30px-desktop text20px-mobile text-[#B5B5B5] duration-300 group-hover:text-white">support@payana.co.in</p>
+						</a>
+					</div>
+				</div>
+
+				<img src="./public/images/footer-logo.png" class="w-[40%] mx-auto md:mx-0 md:w-[9vw]" alt="">
+			</div>
+
+			<img src="./public/images/go.png" class="w-full mt-[6vw] hidden md:block" alt="">
+			<div class="flex flex-col md:flex-row gap-[5vw] items-center justify-between text15px-mobile text24px-desktop text-white font-medium mt-[6vw] md:-mt-[1.5vw] px-[2vw]">
+				<p>Indeamind Technologies Pvt. Ltd., Mysuru</p>
+
+				<div class="flex items-center gap-[6vw] md:gap-[3vw]">
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms & Conditions</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./src/script.js"></script>
+</body>
+
+</html>

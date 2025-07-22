@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Uncut Sans", "sans-serif";
+}
+
+/* ============================================ */
+/* =============== Custom Fonts =============== */
+/* ============================================ */
+@font-face {
+	font-family: "Uncut Sans";
+	src: url("../public/fonts/UncutSans-Medium.woff2") format("woff2"), url("../public/fonts/UncutSans-Medium.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Uncut Sans";
+	src: url("../public/fonts/UncutSans-Semibold.woff2") format("woff2"), url("../public/fonts/UncutSans-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Uncut Sans";
+	src: url("../public/fonts/UncutSans-Bold.woff2") format("woff2"), url("../public/fonts/UncutSans-Bold.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+@keyframes ring-ping {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(-50%, -50%) scale(2);
+		opacity: 0;
+	}
+}
+
+.ring-ping {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 180%;
+	aspect-ratio: 1 / 1;
+	border: 2px solid #7e7e7e80;
+	border-radius: 9999px;
+	transform: translate(-50%, -50%);
+	animation: ring-ping 2.4s ease-out infinite;
+}
+
+.delay-0 {
+	animation-delay: 0s;
+}
+
+.delay-800 {
+	animation-delay: 0.8s;
+}
+
+.delay-1600 {
+	animation-delay: 1.6s;
+}
+
+/* ============================================ */
+/* =============== Font sizes =============== */
+/* ============================================ */
+
+@layer utilities {
+	.text20px-desktop {
+		@apply md:!text-[1.15vw];
+	}
+
+	.text24px-desktop {
+		@apply md:!text-[1.35vw];
+	}
+
+	.text26px-desktop {
+		@apply md:!text-[1.425vw];
+	}
+
+	.text28px-desktop {
+		@apply md:!text-[1.5vw];
+	}
+
+	.text30px-desktop {
+		@apply md:!text-[1.7vw];
+	}
+
+	.text32px-desktop {
+		@apply md:!text-[1.725vw];
+	}
+
+	.text36px-desktop {
+		@apply md:!text-[1.9vw];
+	}
+
+	.text40px-desktop {
+		@apply md:!text-[2.1vw];
+	}
+
+	.text48px-desktop {
+		@apply md:!text-[2.52vw];
+	}
+
+	.text72px-desktop {
+		@apply md:!text-[4.1vw];
+	}
+
+	.text74px-desktop {
+		@apply md:!text-[4.25vw];
+	}
+
+	.text80px-desktop {
+		@apply md:!text-[4.45vw];
+	}
+
+	.text90px-desktop {
+		@apply md:!text-[4.85vw];
+	}
+
+	.text150px-desktop {
+		@apply md:!text-[8vw];
+	}
+
+	/* =============================== */
+	/* =============================== */
+	/* =============================== */
+	.text14px-mobile {
+		@apply text-[3.25vw];
+	}
+
+	.text16px-mobile {
+		@apply text-[3.75vw];
+	}
+
+	.text18px-mobile {
+		@apply text-[4vw];
+	}
+
+	.text20px-mobile {
+		@apply text-[4.5vw];
+	}
+
+	.text22px-mobile {
+		@apply text-[5vw];
+	}
+
+	.text24px-mobile {
+		@apply text-[6vw];
+	}
+
+	.text30px-mobile {
+		@apply text-[7vw];
+	}
+
+	.text40px-mobile {
+		@apply text-[9.4vw];
+	}
+
+	.text54px-mobile {
+		@apply text-[12vw];
+	}
+
+	.text60px-mobile {
+		@apply text-[14vw];
+	}
+
+	.text84px-mobile {
+		@apply text-[19vw];
+	}
+}
