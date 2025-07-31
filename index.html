@@ -446,14 +446,14 @@
 						<div class="mt-[4vw] grid grid-cols-1 md:grid-cols-4 gap-[3vw] md:gap-[1.5vw]">
 							<template x-for="(step, idx) in [
 								{icon:'down.svg', text:'Download the App (Passenger version)', num:'01'},
-								{icon:'down.svg', text:'Register with your mobile number', num:'02'},
+								{icon:'call.svg', text:'Register with your mobile number', num:'02'},
 								{icon:'tick.svg', text:'Book Rides Instantly', num:'03'},
-								{icon:'down.svg', text:'Track, Pay & Review', num:'04'}
+								{icon:'pin.svg', text:'Track, Pay & Review', num:'04'}
 							]" :key="idx">
 								<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
 									<img :src="'./public/images/' + step.icon" class="w-[8vw] md:w-[3vw]" alt="" loading="lazy" decoding="async">
 									<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]" x-text="step.text"></p>
-									<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]" x-text="step.num"></p>
+									<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/4 absolute bottom-0 right-[5vw] md:right-[1.5vw]" x-text="step.num"></p>
 								</div>
 							</template>
 						</div>
@@ -464,14 +464,14 @@
 						<div class="mt-[4vw] grid grid-cols-1 md:grid-cols-4 gap-[3vw] md:gap-[1.5vw]">
 							<template x-for="(step, idx) in [
 								{icon:'down.svg', text:'Download the App (Driver version)', num:'01'},
-								{icon:'down.svg', text:'Register & Pay ₹20/day Subscription', num:'02'},
+								{icon:'call.svg', text:'Register & Pay ₹20/day Subscription', num:'02'},
 								{icon:'tick.svg', text:'Accept Nearby Rides', num:'03'},
-								{icon:'down.svg', text:'Complete Trip & Get Paid', num:'04'}
+								{icon:'pin.svg', text:'Complete Trip & Get Paid', num:'04'}
 							]" :key="idx">
 								<div class="rounded-[3vw] md:rounded-[1.5vw] bg-[#FAE070] overflow-hidden p-[5vw] md:p-[1.5vw] pb-[22vw] md:pb-[8vw] relative">
 									<img :src="'./public/images/' + step.icon" class="w-[8vw] md:w-[3vw]" alt="" loading="lazy" decoding="async">
 									<p class="font-semibold text30px-desktop text22px-mobile leading-[1.2] md:leading-[1.3] text-[#1C1C1C] mt-[3vw] md:mt-[1.4vw]" x-text="step.text"></p>
-									<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/3 absolute bottom-0 right-[5vw] md:right-[1.5vw]" x-text="step.num"></p>
+									<p class="text-white text150px-desktop text84px-mobile text-right translate-y-1/4 absolute bottom-0 right-[5vw] md:right-[1.5vw]" x-text="step.num"></p>
 								</div>
 							</template>
 						</div>
