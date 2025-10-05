@@ -337,40 +337,98 @@
 		</section>
 	</main>
 
-	<footer class="bg-[#212121] relative text-white">
-		<img src="./public/images/usp.svg" class="absolute top-0 right-0 w-[70%] z-[2]" alt="">
+	<footer class="relative bg-[#212121] text-white">
+		<!-- Decorative Background Shape -->
+		<img src="./public/images/usp.svg" class="absolute top-0 right-0 w-[70%] z-[2]" alt="" aria-hidden="true">
 
-		<div class="pt-[10vw] md:pt-[4vw] px-[5vw] md:px-[2vw] pb-[8vw] md:pb-[2.5vw] relative z-[4]">
-			<div class="flex flex-col md:flex-row gap-[10vw] md:gap-0 md:justify-between md:items-center px-[2vw]">
-				<div>
-					<p class="font-medium text48px-desktop text30px-mobile leading-[1.03]">Partnerships &<br> Business Enquiries</p>
-					<div class="mt-[5vw] md:mt-[2vw] flex flex-col gap-[1vw]">
-						<!-- <a href="tel:+919047228648" class="flex gap-[1vw] items-center group">
-								<div class="shrink-0 rounded-full size-[3.5vw] bg-[#FAE070] flex items-center justify-center">
-									<img src="./public/images/phone.svg" class="w-[40%]" alt="">
+		<div class="relative z-[4] px-[5vw] md:px-[2vw] pt-[10vw] md:pt-[4vw] pb-[8vw] md:pb-[2.5vw]">
+			<!-- Contact & Logo Row -->
+			<div class="flex flex-col md:flex-row justify-between items-center gap-[15vw] md:gap-0 px-[2vw]">
+				<!-- Contact Section -->
+				<div class="flex flex-col md:flex-row gap-[12vw] self-start md:gap-[7vw]">
+					<div>
+						<p class="font-medium leading-[1.03] text30px-mobile text48px-desktop">
+							Partnerships &<br> Business Enquiries
+						</p>
+
+						<!-- Email -->
+						<div class="flex flex-col gap-[1vw] mt-[5vw] md:mt-[2vw]">
+							<a href="mailto:support@payana.co" class="flex items-center gap-[3vw] md:gap-[1vw] group">
+								<div class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] size-[8vw] md:size-[3vw]">
+									<img src="./public/images/mail.svg" alt="Email" class="w-[40%]">
 								</div>
-								<p class="font-medium text30px-desktop text-[#B5B5B5] duration-300 group-hover:text-white">+91 90472 28648</p>
-							</a> -->
-						<a href="mailto:support@payana.co" class="flex gap-[3vw] md:gap-[1vw] items-center group">
-							<div class="shrink-0 rounded-full size-[8vw] md:size-[3.5vw] bg-[#FAE070] flex items-center justify-center">
-								<img src="./public/images/mail.svg" class="w-[40%]" alt="">
+								<p class="font-medium duration-300 group-hover:text-white text20px-mobile text24px-desktop text-[#B5B5B5]">
+									support@payana.co
+								</p>
+							</a>
+						</div>
+					</div>
+					<div>
+						<p class="font-medium leading-[1.03] text30px-mobile text48px-desktop">
+							Our Business<br> Timings
+						</p>
+
+						<!-- Email -->
+						<div class="flex flex-col gap-[1vw] mt-[5vw] md:mt-[2vw]">
+							<a href="mailto:support@payana.co" class="flex items-start gap-[3vw] md:gap-[1vw] group">
+								<div class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] size-[8vw] md:size-[3vw]">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="w-[40%] h-auto" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 0C13.9707 0 18 4.0293 18 9C18 13.9707 13.9707 18 9 18C4.0293 18 0 13.9707 0 9C0 4.0293 4.0293 0 9 0ZM9 3.6C8.7613 3.6 8.53239 3.69482 8.3636 3.8636C8.19482 4.03239 8.1 4.2613 8.1 4.5V9C8.10005 9.23868 8.19491 9.46756 8.3637 9.6363L11.0637 12.3363C11.2334 12.5002 11.4608 12.591 11.6968 12.5889C11.9327 12.5869 12.1585 12.4922 12.3253 12.3253C12.4922 12.1585 12.5869 11.9327 12.5889 11.6968C12.591 11.4608 12.5002 11.2334 12.3363 11.0637L9.9 8.6274V4.5C9.9 4.2613 9.80518 4.03239 9.6364 3.8636C9.46761 3.69482 9.23869 3.6 9 3.6Z" fill="#212121" />
+									</svg>
+
+								</div>
+								<div class="space-y-[.75vw] pt-[.5vw]">
+									<p class="font-semibold duration-300 group-hover:text-white text20px-mobile text32px-desktop text-[#FAFAFA]">
+										Monday to Friday
+									</p>
+									<p class="font-medium duration-300 group-hover:text-white text20px-mobile text24px-desktop text-[#B5B5B5]">
+										From 9:30am -6:00 pm
+									</p>
+								</div>
+							</a>
+
+							<div class="mt-[7vw] md:mt-[3vw]">
+								<div class="flex items-center gap-[4vw] md:gap-[1.5vw]">
+									<a href="https://www.instagram.com/gopayana.co?igsh=MWxmcXl3cWk2Nml6eQ%3D%3D&utm_source=qr" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-black duration-300 group-hover:text-[#FAE070] w-[60%] h-auto" viewBox="0 0 24 24">
+											<path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/company/go-payana-cab-services/" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-black duration-300 group-hover:text-[#FAE070] w-[65%] h-auto" viewBox="0 0 24 24">
+											<path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+										</svg>
+									</a>
+									<a href="https://www.youtube.com/@Gopayana" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-black duration-300 group-hover:text-[#FAE070] w-[70%] h-auto" viewBox="0 0 24 24">
+											<path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+										</svg>
+									</a>
+									<a href="https://www.facebook.com/share/1ED9v3JcG3/?mibextid=wwXIfr" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" class="text-black duration-300 group-hover:text-[#FAE070] w-[55%] h-auto" viewBox="0 0 1000 1000">
+											<path fill="currentColor" d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z" />
+										</svg>
+									</a>
+								</div>
 							</div>
-							<p class="font-medium text30px-desktop text20px-mobile text-[#B5B5B5] duration-300 group-hover:text-white">support@payana.co</p>
-						</a>
+						</div>
 					</div>
 				</div>
 
-				<img src="./public/images/footer-logo.png" class="w-[40%] mx-auto md:mx-0 md:w-[9vw]" alt="">
+				<!-- Footer Logo -->
+				<img src="./public/images/footer-logo.png" alt="Payana" class="mx-auto md:mx-0 w-[40%] md:w-[9vw]">
 			</div>
 
-			<img src="./public/images/go.png" class="w-full mt-[6vw] hidden md:block" alt="">
-			<div class="flex flex-col md:flex-row gap-[5vw] items-center justify-between text15px-mobile text24px-desktop text-white font-medium mt-[6vw] md:-mt-[1.5vw] px-[2vw]">
-				<p>Indeamind Technologies Pvt. Ltd., Mysuru</p>
+			<!-- Decorative Divider Image -->
+			<img src="./public/images/go.png" alt="" class="hidden md:block w-full mt-[6vw]" aria-hidden="true">
 
-				<div class="flex items-center gap-[6vw] md:gap-[3vw]">
-					<a href="./privacy-policy.html">Privacy Policy</a>
-					<a href="./terms-and-conditions.html">Terms & Conditions</a>
-				</div>
+			<!-- Bottom Links & Company Info -->
+			<div class="flex flex-col md:flex-row items-center justify-between gap-[5vw] mt-[6vw] md:-mt-[1.5vw] px-[2vw] font-medium text15px-mobile text24px-desktop">
+				<p>Indeamind Technologies Pvt. Ltd., Mysuru</p>
+				<nav class="flex items-center gap-[6vw] md:gap-[3vw]">
+					<a href="./privacy-policy.html" class="hover:underline">Privacy Policy</a>
+					<a href="./terms-and-conditions.html" class="hover:underline">Terms & Conditions</a>
+				</nav>
 			</div>
 		</div>
 	</footer>

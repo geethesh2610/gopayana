@@ -199,7 +199,7 @@
 				</div>
 
 				<!-- App Download Section -->
-				<div class="relative z-0 rounded-[3vw] overflow-hidden bg-[#FAE070] flex flex-col md:flex-row md:items-end md:justify-between p-[5vw] md:p-[2.75vw] pt-[7vw] md:pt-[4vw] mt-[15vw] md:-mt-[4vw]">
+				<div class="relative z-0 rounded-[3vw] overflow-hidden bg-[#FAE070] flex flex-col md:flex-row md:items-center md:justify-between p-[5vw] md:p-[2.75vw] pt-[7vw] md:py-[0vw] mt-[15vw] md:-mt-[4vw]">
 					<img src="./public/images/bg-svg.svg" class="absolute z-0 right-0 bottom-0 md:w-[40%] w-full" alt="" aria-hidden="true">
 
 					<!-- Download Info -->
@@ -208,15 +208,6 @@
 							<span>Download the</span>
 							<span>GoPayana App</span>
 						</h3>
-
-						<div class="flex items-center gap-[4vw] md:gap-[2vw] mt-[3vw] md:mt-0">
-							<a href="#" aria-label="Download on Google Play">
-								<img src="./public/images/gplay.png" class="h-[11vw] md:h-[4.5vw]" alt="Google Play badge" loading="lazy" decoding="async">
-							</a>
-							<div>
-								<img src="./public/images/ios.png" class="h-[11vw] md:h-[4.5vw]" alt="Download on iOS" loading="lazy" decoding="async">
-							</div>
-						</div>
 					</div>
 
 					<!-- Auto Illustration -->
@@ -227,73 +218,107 @@
 				<div class="mt-[4vw] md:mt-[1vw] flex flex-col md:flex-row gap-[4vw] md:gap-[1vw]">
 
 					<!-- Passenger Card -->
-					<div class="flex-1 overflow-hidden bg-[#FAE070] p-[5vw] md:px-[2.5vw] md:py-[2vw] rounded-[3vw]">
-						<div class="flex justify-between items-start">
-							<div class="pt-[.6vw]">
+					<div class="flex-1 overflow-hidden bg-[#FAE070] p-[5vw] md:px-[2.5vw] md:py-[2vw] rounded-[3vw] relative">
+						<div class="absolute top-0 right-0 bg-black rounded-bl-[6vw] md:rounded-bl-[3vw] px-[5vw] md:px-[2.5vw] py-[1vw] flex items-center gap-[3vw] md:gap-[1vw] h-[12vw] md:h-[4.25vw]">
+							<svg width="16" height="38" viewBox="0 0 16 38" fill="none" class="md:h-[2.25vw] h-[6vw] w-auto" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_493_109)">
+									<path d="M8.03637 8.84468C9.09991 8.83746 10.1179 8.39556 10.87 7.61465C11.622 6.83375 12.0476 5.77668 12.0546 4.67234C12.0546 3.56577 11.6312 2.50452 10.8777 1.72205C10.1241 0.939585 9.10206 0.5 8.03637 0.5C6.97067 0.5 5.94863 0.939585 5.19507 1.72205C4.44152 2.50452 4.01817 3.56577 4.01817 4.67234C4.02513 5.77668 4.4507 6.83375 5.20276 7.61465C5.95481 8.39556 6.97282 8.83746 8.03637 8.84468ZM11.8271 9.94681H4.24562C3.13084 9.94048 2.05887 10.3921 1.26352 11.2032C0.468172 12.0144 0.0139685 13.1191 -2.48557e-05 14.2766V23.0149C-0.00206158 23.1809 0.0279236 23.3456 0.0881634 23.4994C0.148403 23.6532 0.237679 23.7929 0.350728 23.9103C0.463777 24.0276 0.598313 24.1203 0.746406 24.1829C0.894499 24.2454 1.05315 24.2766 1.21302 24.2745H3.56328L4.85214 36.3191C4.88868 36.6325 5.03024 36.9226 5.25202 37.1384C5.4738 37.3543 5.76165 37.4823 6.06518 37.5H9.93174C10.2395 37.4962 10.5347 37.3729 10.7592 37.1543C10.9838 36.9357 11.1213 36.6378 11.1448 36.3191L12.3578 24.2745H14.7839C14.9438 24.2766 15.1024 24.2454 15.2505 24.1829C15.3986 24.1203 15.5331 24.0276 15.6462 23.9103C15.7592 23.7929 15.8485 23.6532 15.9088 23.4994C15.969 23.3456 15.999 23.1809 15.9969 23.0149V14.2766C16.005 13.7057 15.9027 13.1389 15.696 12.6098C15.4893 12.0807 15.1824 11.6 14.7936 11.1963C14.4048 10.7926 13.9419 10.4739 13.4323 10.2593C12.9228 10.0447 12.3769 9.93843 11.8271 9.94681Z" fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_493_109">
+										<rect width="16" height="37" fill="white" transform="translate(0 0.5)" />
+									</clipPath>
+								</defs>
+							</svg>
+							<p class="font-semibold text18px-mobile text24px-desktop text-white">Start Riding</p>
+						</div>
+						<div class="flex pt-[8vw] md:pt-[3vw] w-full">
+							<div class="pt-[.6vw] w-full">
 								<p class="text36px-desktop text30px-mobile font-semibold text-[#262626]">For Passengers</p>
 								<p class="text26px-desktop text16px-mobile font-medium text-[#262626]/80 leading-[1.46] mt-[1vw] md:mt-[.2vw]">Book autos and cabs easily</p>
 
 								<!-- CTA Button -->
-								<a href="#" class="btn-animate block w-max group mt-[10vw] md:mt-[4vw]" aria-label="Download app for passengers">
-									<div class="btn-container rounded-full p-[1vw] md:p-[.5vw] flex items-center gap-[4vw] md:gap-[2.5vw] border-[2px] bg-[#1C1C1C]">
-										<div class="btn-text-wrapper flex-col relative inline-flex whitespace-nowrap overflow-hidden">
-											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] duration-300 inline-block group-hover:-translate-y-full">
-												Download
-											</span>
-											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] absolute top-full left-0 duration-300 inline-block group-hover:-translate-y-full">
-												Download
-											</span>
+								<div class="flex md:items-center flex-col md:flex-row gap-[2vw] md:gap-[.5vw] mt-[6vw] md:mt-[2.5vw]">
+									<a href="https://apps.apple.com/us/app/go-payana/id6751937353" class="flex w-max md:w-auto md:flex-1 items-center rounded-[2vw] md:rounded-[1vw] p-[1.5vw] pr-[3vw] md:px-[.4vw] md:py-[0.4vw] gap-[4vw] md:gap-[0.8vw] border-2 border-[#1C1C1C4D] hover:scale-[1.01] transition-transform duration-300">
+										<!-- iOS icon -->
+										<div class="flex items-center bg-black rounded-[1.25vw] md:rounded-[.8vw] px-[1vw] py-[0.8vw] md:px-[0.75vw] md:py-[.65vw] justify-center w-[16vw] md:w-auto">
+											<img src="./public/images/ios.png" class="w-[14vw] md:w-[4vw]" alt="">
 										</div>
-										<div class="btn-circle rounded-full aspect-square h-[9vw] md:h-[2.25vw] flex items-center justify-center bg-[#FAE070]" aria-hidden="true">
-											<div class="relative overflow-hidden size-[6vw] md:w-[2vw] md:h-[3vw] flex items-center justify-center">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rotate-180 w-[6vw] md:w-[1.65vw] h-auto duration-300" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-													<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12l-7-7l-7 7m7-7v14" />
-												</svg>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
 
-							<!-- Passenger Icon -->
-							<div class="rounded-full size-[13vw] md:size-[5vw] flex items-center justify-center bg-[#EED35D] translate-x-[1vw] -translate-y-[.85vw]">
-								<img src="./public/images/man.svg" class="h-[50%] md:h-[65%]" alt="Passenger icon" loading="lazy" decoding="async">
+										<!-- Text -->
+										<span class="text16px-mobile text26px-desktop font-semibold text-black tracking-tight">For iOS Users</span>
+
+										<!-- Download Icon -->
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[5vw] md:w-[1.4vw] h-auto text-black">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+										</svg>
+									</a>
+									<a href="https://play.google.com/store/apps/details?id=com.payana.customer" class="flex w-max md:w-auto md:flex-1 items-center rounded-[2vw] md:rounded-[1vw] p-[1.5vw] pr-[3vw] md:px-[.4vw] md:py-[0.4vw] gap-[3.7vw] md:gap-[0.8vw] border-2 border-[#1C1C1C4D] hover:scale-[1.01] transition-transform duration-300">
+										<!-- Android icon -->
+										<div class="flex items-center bg-black rounded-[1.25vw] md:rounded-[.8vw] px-[1vw] py-[1.25vw] md:px-[0.75vw] md:py-[.65vw] justify-center w-[16vw] md:w-auto">
+											<img src="./public/images/android.png" class="w-[9vw] md:w-[3vw]" alt="">
+										</div>
+
+										<!-- Text -->
+										<span class="text16px-mobile text26px-desktop font-semibold text-black tracking-tight">Android Users</span>
+
+										<!-- Download Icon -->
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[5vw] md:w-[1.4vw] h-auto text-black">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+										</svg>
+									</a>
+
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<!-- Driver Card -->
-					<div class="flex-1 overflow-hidden bg-[#FAE070] p-[5vw] md:px-[2.5vw] md:py-[2vw] rounded-[3vw]">
-						<div class="flex justify-between items-start">
-							<div class="pt-[.6vw]">
+					<div class="flex-1 overflow-hidden bg-[#FAE070] p-[5vw] md:px-[2.5vw] md:py-[2vw] rounded-[3vw] relative">
+						<div class="absolute top-0 right-0 bg-black rounded-bl-[6vw] md:rounded-bl-[3vw] px-[5vw] md:px-[2.5vw] py-[1vw] flex items-center gap-[3vw] md:gap-[1vw] h-[12vw] md:h-[4.25vw]">
+							<svg width="25" height="26" viewBox="0 0 25 26" fill="none" class="md:h-[2vw] h-[4.5vw] w-auto" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.41967 0.703567C7.03637 0.859971 6.72742 1.10099 6.44283 1.38303L0.883033 6.94306C0.609979 7.21741 0.370255 7.51996 0.210012 7.90199C0.0614358 8.27431 -0.009665 8.67301 0.00105452 9.07374V16.9273C0.00105452 17.3144 0.0472045 17.699 0.203602 18.0811C0.359999 18.4631 0.601005 18.7733 0.883033 19.058L6.44283 24.618C6.71717 24.8911 7.0197 25.1308 7.40172 25.2898C7.78374 25.45 8.17217 25.5 8.57342 25.5H16.4266C16.8138 25.5 17.1984 25.4551 17.5804 25.2974C17.9637 25.141 18.2726 24.9 18.5572 24.618L24.117 19.058C24.3901 18.7836 24.6298 18.4811 24.7887 18.099C24.9378 17.7268 25.0093 17.3281 24.999 16.9273V9.07374C25.0093 8.67947 24.9404 8.28712 24.7964 7.91994C24.6387 7.55152 24.4075 7.21913 24.117 6.94306L18.5572 1.38303C18.2812 1.09251 17.9488 0.861312 17.5804 0.703567C17.2132 0.559561 16.8209 0.490683 16.4266 0.501011H8.57342C8.17916 0.490683 7.78684 0.559561 7.41967 0.703567ZM7.69273 7.23151C7.69273 6.9765 7.79402 6.73194 7.97433 6.55162C8.15464 6.37131 8.39919 6.27001 8.65419 6.27001H16.3459C16.6009 6.27001 16.8454 6.37131 17.0257 6.55162C17.206 6.73194 17.3073 6.9765 17.3073 7.23151C17.3073 7.48651 17.206 7.73107 17.0257 7.91139C16.8454 8.09171 16.6009 8.19301 16.3459 8.19301H14.046C14.3512 8.69683 14.5524 9.25707 14.6563 9.8314H16.3459C16.6009 9.8314 16.8454 9.9327 17.0257 10.113C17.206 10.2933 17.3073 10.5379 17.3073 10.7929C17.3073 11.0479 17.206 11.2925 17.0257 11.4728C16.8454 11.6531 16.6009 11.7544 16.3459 11.7544H14.6563C14.5252 12.5157 14.2076 13.2328 13.732 13.8415C13.3895 14.2725 12.9594 14.6258 12.4701 14.878C11.9808 15.1302 11.4435 15.2755 10.8937 15.3043L14.7973 19.3874C14.9654 19.5731 15.0544 19.8171 15.0453 20.0675C15.0362 20.3178 14.9299 20.5547 14.7488 20.7278C14.5677 20.9009 14.3262 20.9964 14.0757 20.9941C13.8252 20.9919 13.5855 20.8919 13.4076 20.7156L7.95937 15.0184C7.82936 14.8822 7.74217 14.7109 7.70862 14.5257C7.67506 14.3405 7.69661 14.1495 7.77059 13.9764C7.84458 13.8033 7.96774 13.6557 8.12481 13.552C8.28188 13.4482 8.46595 13.3929 8.65419 13.3928H10.5771C11.3463 13.3928 11.8744 13.0851 12.2308 12.6403C12.4376 12.3772 12.5909 12.0763 12.6821 11.7544H8.65419C8.39919 11.7544 8.15464 11.6531 7.97433 11.4728C7.79402 11.2925 7.69273 11.0479 7.69273 10.7929C7.69273 10.5379 7.79402 10.2933 7.97433 10.113C8.15464 9.9327 8.39919 9.8314 8.65419 9.8314H12.6821C12.5909 9.5095 12.4376 9.20856 12.2308 8.94554C11.8744 8.50069 11.3463 8.19301 10.5771 8.19301H8.65419C8.39919 8.19301 8.15464 8.09171 7.97433 7.91139C7.79402 7.73107 7.69273 7.48651 7.69273 7.23151Z" fill="white" />
+							</svg>
+
+							<p class="font-semibold text18px-mobile text24px-desktop text-white">Start Earning</p>
+						</div>
+						<div class="flex pt-[8vw] md:pt-[3vw] w-full">
+							<div class="pt-[.6vw] w-full">
 								<p class="text36px-desktop text30px-mobile font-semibold text-[#262626]">For Drivers</p>
-								<p class="text26px-desktop text16px-mobile font-medium text-[#262626]/80 leading-[1.46] mt-[1vw] md:mt-[.2vw]">₹20/day subscription, zero commissions</p>
+								<p class="text26px-desktop text16px-mobile font-medium text-[#262626]/80 leading-[1.46] mt-[1vw] md:mt-[.2vw]">₹25/day subscription, zero commissions</p>
 
 								<!-- CTA Button -->
-								<a href="#" class="btn-animate block w-max group mt-[10vw] md:mt-[4vw]" aria-label="Download app for drivers">
-									<div class="btn-container rounded-full p-[1vw] md:p-[.5vw] flex items-center gap-[4vw] md:gap-[2.5vw] border-[2px] bg-[#1C1C1C]">
-										<div class="btn-text-wrapper flex-col relative inline-flex whitespace-nowrap overflow-hidden">
-											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] duration-300 inline-block group-hover:-translate-y-full">
-												Download
-											</span>
-											<span class="text24px-desktop text16px-mobile font-semibold tracking-tight leading-[1.3] pl-[3vw] md:pl-[1.35vw] text-[#ffffff] absolute top-full left-0 duration-300 inline-block group-hover:-translate-y-full">
-												Download
-											</span>
+								<div class="flex md:items-center flex-col md:flex-row gap-[2vw] md:gap-[.5vw] mt-[6vw] md:mt-[2.5vw]">
+									<a href="https://apps.apple.com/us/app/go-payana-driver-app/id6751942587" class="flex w-max md:w-auto md:flex-1 items-center rounded-[2vw] md:rounded-[1vw] p-[1.5vw] pr-[3vw] md:px-[.4vw] md:py-[0.4vw] gap-[4vw] md:gap-[0.8vw] border-2 border-[#1C1C1C4D] hover:scale-[1.01] transition-transform duration-300">
+										<!-- iOS icon -->
+										<div class="flex items-center bg-black rounded-[1.25vw] md:rounded-[.8vw] px-[1vw] py-[0.8vw] md:px-[0.75vw] md:py-[.65vw] justify-center w-[16vw] md:w-auto">
+											<img src="./public/images/ios.png" class="w-[14vw] md:w-[4vw]" alt="">
 										</div>
-										<div class="btn-circle rounded-full aspect-square h-[9vw] md:h-[2.25vw] flex items-center justify-center bg-[#FAE070]" aria-hidden="true">
-											<div class="relative overflow-hidden size-[6vw] md:w-[2vw] md:h-[3vw] flex items-center justify-center">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rotate-180 w-[6vw] md:w-[1.65vw] h-auto duration-300" viewBox="0 0 24 24" role="presentation" aria-hidden="true">
-													<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 12l-7-7l-7 7m7-7v14" />
-												</svg>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
 
-							<!-- Driver Icon -->
-							<div class="rounded-full size-[13vw] md:size-[5vw] flex items-center justify-center bg-[#EED35D] translate-x-[1vw] -translate-y-[.85vw]">
-								<img src="./public/images/auto-svg.svg" class="h-[40%] md:h-[55%]" alt="Auto rickshaw icon" loading="lazy" decoding="async">
+										<!-- Text -->
+										<span class="text16px-mobile text26px-desktop font-semibold text-black tracking-tight">For iOS Users</span>
+
+										<!-- Download Icon -->
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[5vw] md:w-[1.4vw] h-auto text-black">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+										</svg>
+									</a>
+									<a href="https://play.google.com/store/apps/details?id=com.payana.driver" class="flex w-max md:w-auto md:flex-1 items-center rounded-[2vw] md:rounded-[1vw] p-[1.5vw] pr-[3vw] md:px-[.4vw] md:py-[0.4vw] gap-[3.7vw] md:gap-[0.8vw] border-2 border-[#1C1C1C4D] hover:scale-[1.01] transition-transform duration-300">
+										<!-- Android icon -->
+										<div class="flex items-center bg-black rounded-[1.25vw] md:rounded-[.8vw] px-[1vw] py-[1.25vw] md:px-[0.75vw] md:py-[.65vw] justify-center w-[16vw] md:w-auto">
+											<img src="./public/images/android.png" class="w-[9vw] md:w-[3vw]" alt="">
+										</div>
+
+										<!-- Text -->
+										<span class="text16px-mobile text26px-desktop font-semibold text-black tracking-tight">Android Users</span>
+
+										<!-- Download Icon -->
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[5vw] md:w-[1.4vw] h-auto text-black">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+										</svg>
+									</a>
+
+								</div>
 							</div>
 						</div>
 					</div>
@@ -335,7 +360,7 @@
 									<img src="./public/images/usp-1.svg" class="w-[42%]" alt="Driver subscription icon" loading="lazy" decoding="async">
 								</div>
 								<p class="font-medium text26px-desktop leading-[1.4]">
-									<span class="font-bold">₹20/day</span> fixed subscription<br class="hidden md:inline-block"> for drivers – No commissions
+									<span class="font-bold">₹25/day</span> fixed subscription<br class="hidden md:inline-block"> for drivers – No commissions
 								</p>
 							</div>
 
@@ -365,7 +390,7 @@
 									<img src="./public/images/usp-4.svg" class="w-[42%]" alt="24/7 support icon" loading="lazy" decoding="async">
 								</div>
 								<p class="font-medium text26px-desktop leading-[1.4]">
-									<span class="font-bold">24/7 support</span> for<br class="hidden md:inline-block"> passengers and drivers
+									<span class="font-bold">Monday - Friday support</span> for<br class="hidden md:inline-block"> passengers and drivers
 								</p>
 							</div>
 
@@ -464,7 +489,7 @@
 						<div class="mt-[4vw] grid grid-cols-1 md:grid-cols-4 gap-[3vw] md:gap-[1.5vw]">
 							<template x-for="(step, idx) in [
 								{icon:'down.svg', text:'Download the App (Driver version)', num:'01'},
-								{icon:'call.svg', text:'Register & Pay ₹20/day Subscription', num:'02'},
+								{icon:'call.svg', text:'Register & Pay ₹25/day Subscription', num:'02'},
 								{icon:'tick.svg', text:'Accept Nearby Rides', num:'03'},
 								{icon:'pin.svg', text:'Complete Trip & Get Paid', num:'04'}
 							]" :key="idx">
@@ -594,10 +619,10 @@
 									}" :id="$id(tabId + '-content')" x-show="tabContentActive($el)" class="relative">
 								<div x-data="{
 											driversFaqs: [
-												{ id: 1, question: 'What is the driver subscription fee?', answer: 'Drivers can operate on a ₹20/day subscription model, which covers unlimited trips and access to rider requests.' },
+												{ id: 1, question: 'What is the driver subscription fee?', answer: 'Drivers can operate on a ₹25/day subscription model, which covers unlimited trips and access to rider requests.' },
 												{ id: 2, question: 'How do I register as a driver?', answer: 'You can register by filling out our driver signup form in the app or on our website. You’ll need to upload valid documents and complete verification.' },
 												{ id: 3, question: 'What vehicle documents are required?', answer: 'Typically, we require a valid Driving License, RC book, Insurance Certificate, and Pollution Certificate. Exact requirements may vary by city.' },
-												{ id: 4, question: 'How does the ₹20/day subscription work?', answer: 'Once subscribed, drivers can take unlimited rides without any commission deductions. The daily subscription fee must be paid through the app.' }
+												{ id: 4, question: 'How does the ₹25/day subscription work?', answer: 'Once subscribed, drivers can take unlimited rides without any commission deductions. The daily subscription fee must be paid through the app.' }
 											]
 										}" class="flex flex-col gap-[1vw]">
 
@@ -638,23 +663,75 @@
 
 		<div class="relative z-[4] px-[5vw] md:px-[2vw] pt-[10vw] md:pt-[4vw] pb-[8vw] md:pb-[2.5vw]">
 			<!-- Contact & Logo Row -->
-			<div class="flex flex-col md:flex-row justify-between items-center gap-[10vw] md:gap-0 px-[2vw]">
+			<div class="flex flex-col md:flex-row justify-between items-center gap-[15vw] md:gap-0 px-[2vw]">
 				<!-- Contact Section -->
-				<div>
-					<p class="font-medium leading-[1.03] text30px-mobile text48px-desktop">
-						Partnerships &<br> Business Enquiries
-					</p>
+				<div class="flex flex-col md:flex-row gap-[12vw] self-start md:gap-[7vw]">
+					<div>
+						<p class="font-medium leading-[1.03] text30px-mobile text48px-desktop">
+							Partnerships &<br> Business Enquiries
+						</p>
 
-					<!-- Email -->
-					<div class="flex flex-col gap-[1vw] mt-[5vw] md:mt-[2vw]">
-						<a href="mailto:support@payana.co" class="flex items-center gap-[3vw] md:gap-[1vw] group">
-							<div class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] size-[8vw] md:size-[3.5vw]">
-								<img src="./public/images/mail.svg" alt="Email" class="w-[40%]">
+						<!-- Email -->
+						<div class="flex flex-col gap-[1vw] mt-[5vw] md:mt-[2vw]">
+							<a href="mailto:support@payana.co" class="flex items-center gap-[3vw] md:gap-[1vw] group">
+								<div class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] size-[8vw] md:size-[3vw]">
+									<img src="./public/images/mail.svg" alt="Email" class="w-[40%]">
+								</div>
+								<p class="font-medium duration-300 group-hover:text-white text20px-mobile text24px-desktop text-[#B5B5B5]">
+									support@payana.co
+								</p>
+							</a>
+						</div>
+					</div>
+					<div>
+						<p class="font-medium leading-[1.03] text30px-mobile text48px-desktop">
+							Our Business<br> Timings
+						</p>
+
+						<!-- Email -->
+						<div class="flex flex-col gap-[1vw] mt-[5vw] md:mt-[2vw]">
+							<a href="mailto:support@payana.co" class="flex items-start gap-[3vw] md:gap-[1vw] group">
+								<div class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] size-[8vw] md:size-[3vw]">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" class="w-[40%] h-auto" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 0C13.9707 0 18 4.0293 18 9C18 13.9707 13.9707 18 9 18C4.0293 18 0 13.9707 0 9C0 4.0293 4.0293 0 9 0ZM9 3.6C8.7613 3.6 8.53239 3.69482 8.3636 3.8636C8.19482 4.03239 8.1 4.2613 8.1 4.5V9C8.10005 9.23868 8.19491 9.46756 8.3637 9.6363L11.0637 12.3363C11.2334 12.5002 11.4608 12.591 11.6968 12.5889C11.9327 12.5869 12.1585 12.4922 12.3253 12.3253C12.4922 12.1585 12.5869 11.9327 12.5889 11.6968C12.591 11.4608 12.5002 11.2334 12.3363 11.0637L9.9 8.6274V4.5C9.9 4.2613 9.80518 4.03239 9.6364 3.8636C9.46761 3.69482 9.23869 3.6 9 3.6Z" fill="#212121" />
+									</svg>
+
+								</div>
+								<div class="space-y-[.75vw] pt-[.5vw]">
+									<p class="font-semibold duration-300 group-hover:text-white text20px-mobile text32px-desktop text-[#FAFAFA]">
+										Monday to Friday
+									</p>
+									<p class="font-medium duration-300 group-hover:text-white text20px-mobile text24px-desktop text-[#B5B5B5]">
+										From 9:30am -6:00 pm
+									</p>
+								</div>
+							</a>
+
+							<div class="mt-[7vw] md:mt-[3vw]">
+								<div class="flex items-center gap-[4vw] md:gap-[1.5vw]">
+									<a href="https://www.instagram.com/gopayana.co?igsh=MWxmcXl3cWk2Nml6eQ%3D%3D&utm_source=qr" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-black duration-300 group-hover:text-[#FAE070] w-[60%] h-auto" viewBox="0 0 24 24">
+											<path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+										</svg>
+									</a>
+									<a href="https://www.linkedin.com/company/go-payana-cab-services/" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-black duration-300 group-hover:text-[#FAE070] w-[65%] h-auto" viewBox="0 0 24 24">
+											<path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+										</svg>
+									</a>
+									<a href="https://www.youtube.com/@Gopayana" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="text-black duration-300 group-hover:text-[#FAE070] w-[70%] h-auto" viewBox="0 0 24 24">
+											<path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+										</svg>
+									</a>
+									<a href="https://www.facebook.com/share/1ED9v3JcG3/?mibextid=wwXIfr" target="_blank" class="flex items-center justify-center shrink-0 rounded-full bg-[#FAE070] border border-[#FAE070] duration-300 group hover:bg-black size-[10vw] md:size-[3vw]">
+										<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" class="text-black duration-300 group-hover:text-[#FAE070] w-[55%] h-auto" viewBox="0 0 1000 1000">
+											<path fill="currentColor" d="M182.594 0C81.445 0 0 81.445 0 182.594v634.813c0 101.149 81.445 182.594 182.594 182.594h344.063V609.063H423.282v-140.75h103.375v-120.25c0-94.475 61.079-181.219 201.781-181.219c56.968 0 99.094 5.469 99.094 5.469l-3.313 131.438s-42.963-.406-89.844-.406c-50.739 0-58.875 23.378-58.875 62.188v102.781h152.75l-6.656 140.75H675.5v390.938h141.906c101.149 0 182.594-81.445 182.594-182.594V182.595C1000 81.446 918.555.001 817.406.001H182.593z" />
+										</svg>
+									</a>
+								</div>
 							</div>
-							<p class="font-medium duration-300 group-hover:text-white text20px-mobile text30px-desktop text-[#B5B5B5]">
-								support@payana.co
-							</p>
-						</a>
+						</div>
 					</div>
 				</div>
 
